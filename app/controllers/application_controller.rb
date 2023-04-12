@@ -11,5 +11,10 @@ class ApplicationController < ActionController::Base
     #redirect_to("https://www.wikipedia.org")
   end
 
+  def homepage
+    render({ :template => "game_templates/rules.html.erb"})
+  end
+
+
 
 end
