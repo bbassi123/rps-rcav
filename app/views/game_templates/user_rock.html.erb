@@ -1,17 +1,14 @@
-<h2>We played rock!</h2>
-
-<%= computer_move = ["rock", "paper", "scissors"].sample %>
+<h2> 
+  We played rock!
+</h2>
 
 <h2>
-They played <%= computer_move%>!
+  They played <%=@computer_move%>!
 </h2>
-    
-<% if computer_move == "rock" %>
-      <h2> We tied! </h2>
-<%elsif computer_move == "paper"%>
-      <h2> We lost! </h2>
-<%elsif computer_move == "scissors"%>
-      <h2> We won! </h2>
-<%end%>
+
+<h2> 
+  We <%= @outcome%>
+</h2>
+
 
   
